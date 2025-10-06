@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Causas</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+    body {
+      overflow: hidden;
+      margin: 0;
+      font-family: "EB Garamond", serif;
+      font-optical-sizing: auto;
+      background: #252424;
+      color: #fff;
+    }
+
+
+    .nav {
+      background: rgba(23, 23, 23, 0.6);
+      padding: 0.5rem 1rem;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+    }
+
+    .menu {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .menu a {
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 0.55rem 0.8rem;
+      border-radius: 12px;
+      color: #fff;
+      opacity: 0.9;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .menu a:hover {
+      color: #d60000;
+      opacity: 1;
+    }
+
+ 
+    #mapa {
+      position: relative;
+      width: 100%;
+      height: 90vh;
+      margin-top: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    
+    .legenda {
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      background: rgba(23, 23, 23, 0.85);
+      padding: 10px 15px;
+      border-radius: 8px;
+      color: white;
+      font-family: Arial, sans-serif;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+    }
+
+    .cor {
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      border: 1px solid white;
+      border-radius: 3px;
+    }
+
+    .cor.entente { background-color: rgb(1, 1, 168); }
+    .cor.triplice { background-color: red; }
+    .cor.neutros { background-color: gray; }
+    .cor.aliados { background-color: purple; }
+
+   
+    .card-info {
+      position: absolute;
+      bottom: 200px;
+      left: 20px;
+      width: 300px;
+      background: rgba(50, 50, 50, 0.95);
+      padding: 15px;
+      border-radius: 12px;
+      color: white;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.7);
+      font-family: Arial, sans-serif;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .card-info:hover {
+      transform: scale(1.05);
+      background: rgba(50, 50, 50, 1);
+    }
+
+    .card-info h3 {
+      margin: 10px 0;
+      font-size: 18px;
+      color: rgb(160, 0, 0);
+    }
+
+ 
+    .accordion {
+      border-top: 1px solid #444;
+    }
+
+    .accordion-item {
+      border-bottom: 1px solid #444;
+    }
+
+    .accordion-header {
+      padding: 10px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .accordion-header:hover { background: rgba(255, 255, 255, 0.1); }
+
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.4s ease;
+      padding: 0 10px;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    .accordion-content.open {
+      max-height: 200px;
+      padding: 10px;
+    }
+
+    
+  </style>
+</head>
+<body>
+
+ 
+  <nav class="nav">
+    <div class="menu">
+      <a href="../index.html">Início</a>
+      <a href="../html/Consequencias.html">Consequências</a>
+      <a href="../html/Figuras.html">Figuras importantes</a>
+      <a href="../html/Filmes.html">Filmes/Livros</a>
+      <a href="../html/quiz.html">Quiz</a>
+    </div>
+  </nav>
+
+  <div id="mapa">
+
+    <div class="card-info">
+      <h3>Causas:</h3>
+      <div class="accordion">
+        <div class="accordion-item">
+          <div class="accordion-header">Imperialismo e Rivalidade</div>
+          <div class="accordion-content">
+           O imperialismo gerou rivalidade entre as grandes potências europeias, já estabelecidas ou recém-unificadas, como a Alemanha, que buscava expandir seu espaço colonial, criando tensão que contribuiu para a eclosão da Primeira Guerra Mundial.
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header">Nacionalismo Exacerbado</div>
+          <div class="accordion-content">
+           O nacionalismo exacerbado no início do século XX aumentou a rivalidade entre países europeus, elevando o orgulho nacional e a disposição para a guerra. Nos Bálcãs, povos sob domínio de impérios buscavam independência, gerando revoltas e tensões que contribuíram para a eclosão da Primeira Guerra Mundial.
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header">A Política de Alianças</div>
+          <div class="accordion-content">
+            A Política de Alianças dividiu a Europa em blocos rivais antes da Primeira Guerra Mundial. Tríplice Aliança e Tríplice Entente buscavam apoio militar mútuo, mas aumentaram a desconfiança e transformaram conflitos locais em guerras envolvendo várias nações.
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header">Paises Divididos</div>
+          <div class="accordion-content">
+            Na Primeira Guerra Mundial, a Polônia não existia como país independente: seu território estava dividido entre Alemanha, Áustria-Hungria e Rússia, e os poloneses eram obrigados a servir em exércitos estrangeiros. Já a Romênia era independente, mas regiões com maioria romena, como a Transilvânia, ainda pertenciam ao Império Austro-Húngaro.
+          </div>
+        </div>
+      </div>
+    </div>
+
+   
+    <div class="legenda">
+      <h3>Legenda:</h3>
+      <ul>
+        <li><span class="cor entente"></span> Tríplice Entente</li>
+        <li><span class="cor aliados"></span> Países Divididos</li>
+        <li><span class="cor triplice"></span> Tríplice Aliança</li>
+        <li><span class="cor neutros"></span> Neutros</li>
+      </ul>
+    </div>
+  </div>
+
+  
+  <script>
+   
+    const headers = document.querySelectorAll(".accordion-header");
+    headers.forEach(header => {
+      header.addEventListener("click", () => {
+        const content = header.nextElementSibling;
+        const isOpen = content.classList.contains("open");
+
+        document.querySelectorAll(".accordion-content").forEach(c => c.classList.remove("open"));
+
+        if (!isOpen) content.classList.add("open");
+      });
+    });
+
+  
+    let svgPB, svgColorido;
+
+    const coresAliancas = {
+      triplice_entente: "#1E90FF",
+      triplice_alianca: "#FF4500",
+      polonia: "purple",
+      romenia: "purple",
+      turquia: "darkblue"
+    };
+
+    const triplice_entente_ids = ["franca", "reino_unido", "ilha_Reino_Unido", "russia", "belgica"];
+    const triplice_alianca_ids = ["Alemanha_c", "austria_hungria", "italia"];
+    const polonia_ids = ["pl"];
+    const romenia_ids = ["ro"];
+    const turquia_ids = ["tm"];
+
+    fetch("../media/SVG(1)/Mapa.svg")
+      .then(res => res.text())
+      .then(svgText => {
+        const parser = new DOMParser();
+        const svgDoc = parser.parseFromString(svgText, "image/svg+xml");
+        svgPB = svgDoc.documentElement;
+
+        svgPB.querySelectorAll("path, g").forEach(el => el.style.pointerEvents = "all");
+        document.getElementById("mapa").appendChild(svgPB);
+
+        carregarColorido();
+      });
+
+    function carregarColorido() {
+      fetch("../media/SVG(1)/Mapa-colorido.svg")
+        .then(res => res.text())
+        .then(svgText => {
+          const parser = new DOMParser();
+          const svgDoc = parser.parseFromString(svgText, "image/svg+xml");
+          svgColorido = svgDoc.documentElement;
+          aplicarHoverAlianças();
+        });
+    }
+
+    function aplicarHoverAlianças() {
+      const elements = svgPB.querySelectorAll("path, g");
+
+      elements.forEach(el => {
+        let ativado = false;
+
+        el.addEventListener("mouseenter", () => {
+          if (ativado) return;
+          ativado = true;
+
+          const id = el.id || "";
+          let cor = "darkblue";
+
+          if (triplice_entente_ids.includes(id)) {
+            cor = coresAliancas.triplice_entente;
+          } else if (triplice_alianca_ids.includes(id)) {
+            cor = coresAliancas.triplice_alianca;
+          } else if (polonia_ids.includes(id)) {
+            cor = coresAliancas.polonia;
+          } else if (romenia_ids.includes(id)) {
+            cor = coresAliancas.romenia;
+          } else if (turquia_ids.includes(id)) {
+            cor = coresAliancas.turquia;
+          } else {
+            let colorEl = svgColorido.querySelector("#" + id);
+            if (colorEl) {
+              cor = colorEl.style.fill || colorEl.getAttribute("fill") || cor;
+            }
+          }
+
+          el.style.fill = cor;
+        });
+      });
+    }
+  </script>
+
+</body>
+</html>
